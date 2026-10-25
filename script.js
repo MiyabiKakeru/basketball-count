@@ -1,4 +1,5 @@
 let flag
+let subFlag
 const buttonList = document.querySelectorAll("button")
 const aDoc = document.getElementById("aPoi")
 const bDoc = document.getElementById("bPoi")
@@ -102,10 +103,15 @@ class eventLis {
         if(this.name.className == "m"){
             if(this.name.textContent == "start"){
                 this.name.addEventListener("click",() =>{
+                    if(flag == "true"){   
+                    }else{
+                    flag = "true"
                     mainTimer = setInterval(mainTChange,1000)
+                    }
                 })
             }else if(this.name.textContent == "stop"){
                 this.name.addEventListener("click", () => {
+                    flag = "false"
                     clearInterval(mainTimer)
                 })
             }else if(this.name.textContent == "reset"){
@@ -124,8 +130,12 @@ class eventLis {
         }else if(this.name.className == "s"){
             if(this.name.textContent == "start"){
                 this.name.addEventListener("click", () => {
+                    if(subFlag == "true"){
+                    }else{
                 clearInterval(subTimer)
                 subTimer = setInterval(subTChange,100)
+                subFlag = "true"
+                    }
                 subTimerDoc.setAttribute("style","color:#f00;")
                 })
             }else if(this.name.textContent == "stop"){
