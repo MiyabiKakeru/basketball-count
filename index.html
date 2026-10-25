@@ -5,7 +5,6 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
-        <link href="https://db.onlinewebfonts.com/c/e8a606886896d2d9ff493d48237abe1c?family=BLG+Hudson" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
     </head>
@@ -13,17 +12,19 @@
         <audio src="mainTimer.mp3" id="mainB" preload="auto"></audio>
         <audio src="subTimer.mp3" id="subB" preload="auto"></audio>
         <div id="showArea">
+            <div class="img" id="teamA"></div>
             <div id="alphaShow">
                 <h1 id="aPoi">0</h1>
             </div>
             <div id="timer">
                 <h2 id="mainTimer">0:00</h2>
-                <div style="background: #fff; height: 23.9px; width: 490px; margin-top: 15px; margin-bottom: 15px;"></div>
+                <div style="background: #fff; height: 23.9px; width: 500px; margin-top: 15px; margin-bottom: 15px; translate: -5px;"></div>
                 <h2 id="subTimer">0.0</h2>
             </div>
             <div id="bravoShow">
                 <h1 id="bPoi">0</h1>
             </div>
+            <div class="img" id="teamB"></div>
         </div>
         <div id="control">
             <div id="alphaTeamControl">
@@ -54,6 +55,8 @@
                 <button class="s">24</button><br>
                 <button class="s">14</button><br>
                 <button class="s">60</button><br>
+                <button class="s">+1</button><br>
+                <button class="s">-1</button><br>
                 <button class="s">start</button><br>
                 <button class="s">stop</button><br>
                 <button class="s">show</button><br>
