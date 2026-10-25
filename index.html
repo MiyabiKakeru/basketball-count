@@ -1,0 +1,72 @@
+<!--OBS StudioのWeb挿入で、横幅1920px、縦幅3000pxにする
+実際表示する高さは300px-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <audio src="mainTimer.mp3" id="mainB" preload="auto"></audio>
+        <audio src="subTimer.mp3" id="subB" preload="auto"></audio>
+        <div id="showArea">
+            <div id="alphaShow">
+                <h1 id="aPoi">0</h1>
+            </div>
+            <div id="timer">
+                <h2 id="mainTimer">0:00</h2>
+                <div style="background: #fff; height: 23.9px; width: 490px; margin-top: 15px; margin-bottom: 15px;"></div>
+                <h2 id="subTimer">0.0</h2>
+            </div>
+            <div id="bravoShow">
+                <h1 id="bPoi">0</h1>
+            </div>
+        </div>
+        <div id="control">
+            <div id="alphaTeamControl">
+                <button class="a" id="a3">+3</button><br>
+                <button class="a" id="a2">+2</button><br>
+                <button class="a" id="a1">+1</button><br>
+                <button class="a" id="ar">reset</button><br>
+                <button class="a" id="a-1">-1</button><br>
+                <button class="a" id="a-2">-2</button><br>
+                <button class="a" id="a-3">-3</button>
+            </div>
+            <div id="mainTimerControl">
+                <h3>main</h3>
+                <button class="m" id="+600">+10m</button><br>
+                <button class="m" id="+60">+1m</button><br>
+                <button class="m" id="+10">+10s</button><br>
+                <button class="m" id="+1">+1s</button><br>
+                <button class="m">reset</button><br>
+                <button class="m" id="-1">-1s</button><br>
+                <button class="m" id="-10">-10s</button><br>
+                <button class="m" id="-60">-1m</button><br>
+                <button class="m" id="-600">-10m</button><br>
+                <button class="m">start</button><br>
+                <button class="m">stop</button>
+            </div>
+            <div id="subTimerControl">
+                <h3>sub</h3>
+                <button class="s">24</button><br>
+                <button class="s">14</button><br>
+                <button class="s">60</button><br>
+                <button class="s">start</button><br>
+                <button class="s">stop</button><br>
+                <button class="s">show</button><br>
+                <button class="s">hide</button>
+            </div>
+            <div id="bravoTeamControl">
+                <button class="b" id="b3">+3</button><br>
+                <button class="b" id="b2">+2</button><br>
+                <button class="b" id="b1">+1</button><br>
+                <button class="b" id="br">reset</button><br>
+                <button class="b" id="b-1">-1</button><br>
+                <button class="b" id="b-2">-2</button><br>
+                <button class="b" id="b-3">-3</button>
+            </div>
+        </div>
+    </body>
+</html>

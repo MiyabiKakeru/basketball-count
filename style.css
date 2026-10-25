@@ -1,0 +1,49 @@
+#showArea {
+    width: 100%;
+    height: 300px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#alphaShow,#bravoShow {
+  width: 312px;
+  height: 255px;
+  background-image: url("data:image/svg+xml;utf8,<svg width='312px' height='255px' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'><g transform='matrix(1,0,0,1,-1233.386868,-22.828528)'><g transform='matrix(2.154929,0,0,2.175821,1175.825682,-28.234772)'><path d='M171.279,140.364C171.279,140.364 72.632,140.364 38.313,140.364L26.711,128.874C26.711,99.41 26.711,23.469 26.711,23.469L159.678,23.469L171.279,34.958L171.279,140.364ZM166.638,39.554L155.037,28.064C122.264,28.064 31.352,28.064 31.352,28.064C31.352,28.064 31.352,96.517 31.352,124.278L42.953,135.768C75.726,135.768 166.638,135.768 166.638,135.768C166.638,135.768 166.638,67.316 166.638,39.554Z' style='fill:white;'/></g></g></svg>");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#timer {
+    width: 486.8px;
+}
+h1 {
+    font-family: "BLG Hudson";
+    font-size: 139.7pt;
+    color: #fff;
+    height: 254.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-family: "BLG Hudson";
+    font-size: 75pt;
+    color: #fff;
+    width: 486.8px;
+    text-align: center;
+}
+#subTimer {
+    color: #f00;
+}
+button {
+    background: #000;
+    color: #fff;
+    width: 200px;
+    height: 175px;
+    font-size: 200%;
+    margin: 10px;
+}
+#control {
+    display: flex;
+    justify-content: center;
+}
