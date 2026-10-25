@@ -10,7 +10,7 @@ let aPoi = aDoc.textContent
 let bPoi = bDoc.textContent
 let mainTimer
 let subTimer
-//タイマー用変数 ※先に定義しないとエラーになります
+//タイマー用変数
 let mainTimes = 0
 let subTimes = 0
 
@@ -126,6 +126,7 @@ class eventLis {
                 this.name.addEventListener("click", () => {
                 clearInterval(subTimer)
                 subTimer = setInterval(subTChange,100)
+                subTimerDoc.setAttribute("style","color:#f00;")
                 })
             }else if(this.name.textContent == "stop"){
                 this.name.addEventListener("click", () => {
@@ -133,17 +134,29 @@ class eventLis {
                 })
             }else if(this.name.textContent == "show"){
                 this.name.addEventListener("click", () => {
-                subTimerDoc.textContent = subTSet()
+                subTimerDoc.setAttribute("style","color:#f00;")
                 })
             }else if(this.name.textContent == "hide"){
                 this.name.addEventListener("click", () => {
-                subTimerDoc.textContent = "　"
+                subTimerDoc.setAttribute("style","color:#000;")
+                clearInterval(subTimer)
+                })
+            }else if(this.name.textContent == "+1"){
+                this.name.addEventListener("click", () => {
+                    subTimes++
+                    subTimerDoc.textContent = subTSet(subTimes)
+                })
+            }else if(this.name.textContent == "-1"){
+                this.name.addEventListener("click", () => {
+                    subTimes--
+                    subTimerDoc.textContent = subTSet(subTimes)
                 })
             }else{
                 this.name.addEventListener("click", () => {
                 clearInterval(subTimer)
                 subTimes = Number(this.name.textContent) + 1
                 subTimer = setInterval(subTChange,100)
+                subTimerDoc.setAttribute("style","color:#f00;")
                 })
             }
         }
