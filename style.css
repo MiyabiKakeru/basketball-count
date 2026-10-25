@@ -6,6 +6,23 @@
     justify-content: center;
     align-items: center;
 }
+.img {
+    height: 300px;
+    width: 200px;
+    margin: 0px 75px;
+}
+#teamA {
+    background-image: url(iconA.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#teamB {
+    background-image: url(iconB.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 #alphaShow,#bravoShow {
   width: 312px;
   height: 255px;
